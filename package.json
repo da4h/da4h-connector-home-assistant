@@ -1,5 +1,5 @@
 {
-  "name": "@da4h/connector-home-assistant",
+  "name": "@da4h/connector-homeassistant",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -20,12 +20,14 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@da4h/core": "^0.0.1",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
     "home-assistant-js-websocket": "^9.4.0",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "ws": "^8.17.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
@@ -66,8 +68,5 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
-  },
-  "publishConfig": {
-    "@da4h:registry": "https://npm.pkg.github.com"
   }
 }
